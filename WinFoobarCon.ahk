@@ -1,11 +1,10 @@
-
 ;This script uses foo_httpcontrol server to control Foobar
 ;It uses keyboard MediaKeys (PlayPause, Media-next, Media-prev,Volume-up, Volume-down) to send requests. 
 ;One can map any keyboard shortcut; follow AutoHotkey manual
 ;Info about currently playing track will be displayed as OSD, as soon as response from server is arrived
 
-#include c:\httprequest.ahk
-#include c:\JSON.ahk
+#include httprequest.ahk
+#include JSON.ahk
 
 CustomColor = EEAA99  ; Can be any RGB color (it will be made transparent below).
 Gui +LastFound +AlwaysOnTop -Caption +ToolWindow  ; +ToolWindow avoids a taskbar button and an alt-tab menu item.
